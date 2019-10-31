@@ -173,9 +173,10 @@ def index():
    return render_template('index.html')
 
 
-@app.route("/predict")
-def predict():
+@app.route("/predict/<sample>")
+def predict(sample):
     
+    sample = int(sample)
     data = pd.read_csv('WISDM_ar_latest/WISDM_ar_v1.1/WISDM_ar_v1.1.csv')
     
     LABEL = 'Encodedactivity'
@@ -203,13 +204,46 @@ def predict():
     features_set_2, labels_2 = np.array(features_set_2), np.array(labels_2)
     features_set_2= np.reshape(features_set_2,(1317,200,3))
 
-    features_set_single = features_set_2[0]
+    features_set_single = features_set_2[sample]
     features_set_single = np.reshape(features_set_single,(1,200,3))
 
     loaded_model._make_predict_function()
     prediction = loaded_model.predict(features_set_single)
-
-    return str(prediction)
+    result = np.where(prediction[0] == np.amax(prediction[0]))
+    predicted_class = result[0][0]
+    
+    if (predicted_class == 0):
+        predicted_class_activity = 'Downstairs'
+    if (predicted_class == 1):
+        predicted_class_activity = 'Jogging'
+    if (predicted_class == 2):
+        predicted_class_activity = 'Sitting'
+    if (predicted_class == 3):
+        predicted_class_activity = 'Standing'    
+    if (predicted_class == 4):
+        predicted_class_activity = 'Upstairs'
+    if (predicted_class == 5):
+        predicted_class_activity = 'Walking'
+        
+    golden=labels_2[sample]
+    golden_label = np.where(golden == np.amax(golden))
+    label = golden_label[0][0]
+    
+    if (label == 0):
+        label_activity = 'Downstairs'
+    if (label == 1):
+        label_activity = 'Jogging'
+    if (label == 2):
+        label_activity = 'Sitting'
+    if (label == 3):
+        label_activity = 'Standing'    
+    if (label == 4):
+        label_activity = 'Upstairs'
+    if (label == 5):
+        label_activity = 'Walking'
+    
+    return_string = "Predicted class=" + predicted_class_activity + "; Expected class=" + label_activity
+    return return_string
 
 if __name__ == '__main__':
     #app.run(debug=True, threaded=False)

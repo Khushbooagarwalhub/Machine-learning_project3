@@ -8,20 +8,47 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../static/style.css">
 </head>
 
-<body background="main_pic_3.jpg" background-size: 300px 100px;>
+
+<style>
+  html,
+  body,
+  h1,
+  h3,
+  h4,
+  h5,
+  h6 {
+      font-family: 'Impact';
+  }
+  h2 {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 280%
+  }
+  
+</style>
+
+<body background="/static/main_pic_2.jpg" background-size: 300px 100px;>
   <div class="header">
     <nav class="navbar navbar-default justify-content-end">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand">
-            <img class="logo" src="logo.jpg" width=150 height=100>
+            <img class="logo" src="../static/logo.jpg" width=150 height=100>
           </a>
           <!-- HealthBuddy -->
           <font size="+3">HealthBuddy</font>
         </div>
+
+        <!-- <form>
+          First name:<br>
+          <input type="text" name="Recorded value" value="100">
+          <br>
+          <br><br>
+          <input type="submit" value="Submit">
+        </form>  -->
+
 
         <!-- <ul class="nav nav-tabs">
           <li class="nav-item " id="active">
@@ -37,18 +64,22 @@
             <a class="nav-link" href="http://localhost:5000/wine-recommendation-page">Wine Recommendations</a>
           </li> -->
         <!-- </ul> -->
-        <form action="action_page.php" method="post">
+        <!-- <form action="action_page.php" method="post"> -->
             <!-- <div class="imgcontainer">
               <img src="img_avatar2.png" alt="Avatar" class="avatar">
             </div>
            -->
-            <div class="container">
+            <div class="row">
+            <!-- <div class="col-md-4">
+            </div> -->
+            <div class="col-md-12">
+            <div class="container" width: 100px>
               <label for="uname"><b>Username</b></label>
               <input type="text" placeholder="Enter Username" name="uname" required>
-          
+              </br>
               <label for="psw"><b>Password</b></label>
               <input type="password" placeholder="Enter Password" name="psw" required>
-          
+              </br>
               <button type="submit">Login</button>
               <label>
                 <input type="checkbox" checked="checked" name="remember"> Remember me
@@ -59,23 +90,58 @@
               <button type="button" class="cancelbtn">Cancel</button>
               <span class="psw">Forgot <a href="#">password?</a></span>
             </div>
-          </form>
+            </div>
+            </div>
+          <!-- </form> -->
       </div>
     </nav>
   </div>
   <div class="banner">
     <div class="container banner-title">
       <div class="banner-text">
-        <h1>Track your Activity<br><br>
+        <h1 align="left" >Track your Activity<br><br>
           Get Health Incentives
         </h1>
+        <form>
+          Recorded Activity :<br>
+          <input type="text" name="Recorded value" value="Fill between 0 and 1300">
+          <br><br>
+          <input type="submit" value="Submit" formaction="http://127.0.0.1:5000/predict/100">
+        </form> 
       </div>
     </div>
   </div>
-  
+
+<!-- <script>
+function myFunction() {
+
+// var text1= $('#text1').val();
+// $.ajax({
+//               url: "/predict_test1",
+//               type: "POST",
+//               data: {text1:text1}
+//           }).done(function(response) {
+//             var html= "<br><br><br><p> <b> RESULT : <b><p>";
+//             response =response.result;
+//                  $.each(response,function(key,val){
+//                  console.log(val);
+//                     html+="<p>"+val+"<p>"
+//                 });
+//                 html +="<br>";
+//                 $(".show-data").append(html);
+//             });
+};
+  </script>
+          <p>
+          Taking input from web<br><br>
+              Text_Value1<input type="text" id="text1" name="text1"><br><br>
+              <button id="clicked" onclick="myFunction()">Submit</button>
+          </p>
+      <div class="show-data" > -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script type="text/javascript" src="../static/js/app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </body>
 
 </html>
