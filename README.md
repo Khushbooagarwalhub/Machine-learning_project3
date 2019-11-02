@@ -5,6 +5,22 @@ Machine Learning techniques in sensor based human activity recognition and under
 ## Sensor-Based HAR
 Data source for sensor based HAR - WISDM dataset
 http://www.cis.fordham.edu/wisdm/dataset.php
+The source consist of raw time series data and transformed dataset.
+The raw timeseries data consist of -
+Raw time series data 
+Number of examples 
+1,098,207
+Number of attributes – 6
+Class Distribution
+Walking: 424,400 (38.6%)
+Jogging: 342,177 (31.2%)
+Upstairs: 122,869 (11.2%)
+Downstairs: 100,427 (9.1%)
+Sitting: 59,939 (5.5%)
+Standing: 48,395 (4.4%)
+Contains all x,y,z  acceleration values 
+
+The reformatted dataset is formed by statistical measures taking 10 second window with 46 transformed attributes in it
 
 
 
