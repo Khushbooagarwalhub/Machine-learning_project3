@@ -77,6 +77,8 @@ Two techniques were used for sensor based HAR
 There are two models using DNN
 <br>
 Model 1 with 3 layers gives an accuracy of 87.4%
+<br>
+
 Model 2 with extra hidden layers gives an accuracy of 82%
 <br>
 <br>
@@ -85,6 +87,8 @@ Model 2 with extra hidden layers gives an accuracy of 82%
 There are two models using the LSTM technique
 <br>
 Model 1 using 200 steps with Sliding window of 50 ((16692,200,3)) gives an accuracy of 86.1%
+<br>
+
 Model 2 using 200 steps with Non sliding window((4173,200,3)) gives an accuracy of 87.7%
 
 <img src="images_readme/lstm_test.png"><br>
