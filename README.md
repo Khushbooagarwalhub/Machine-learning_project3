@@ -82,6 +82,11 @@ There are two models using the LSTM technique
 Model 1 using 200 steps with Sliding window of 50 ((16692,200,3)) gives an accuracy of 86.1%
 Model 2 using 200 steps with Non sliding window((4173,200,3)) gives an accuracy of 87.7%
 
+<img src="images_readme/lstm_test.png"><br>
+
+
+
+
 
 
 ## Web App for sensor based HAR
