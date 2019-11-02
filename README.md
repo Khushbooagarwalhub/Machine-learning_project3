@@ -17,6 +17,7 @@ The source consist of raw time series data and transformed dataset.
 
 The raw timeseries data consist of -
 Raw time series data 
+<br>
 Number of examples 
 1,098,207
 <br>
@@ -69,12 +70,15 @@ Two techniques were used for sensor based HAR
 
 
 1.Deep neural network(DNN) was used on the reformated data
+<br>
 There are two models using DNN
+<br>
 Model 1 with 3 layers gives an accuracy of 87.4%
 Model 2 with extra hidden layers gives an accuracy of 82%
-
+<br>
 2.LSTM model was used on raw time series data 
 There are two models using the LSTM technique
+<br>
 Model 1 using 200 steps with Sliding window of 50 ((16692,200,3)) gives an accuracy of 86.1%
 Model 2 using 200 steps with Non sliding window((4173,200,3)) gives an accuracy of 87.7%
 
