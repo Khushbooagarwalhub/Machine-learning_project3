@@ -55,8 +55,8 @@ X0,X1X2…….Z8,Z9
 Using the raw data we can plot the timeseries data showing the x,y,z acceleration of different users.For example While jogging the y acceleration would be maximum with less difference between the peaks.While standing the y accelration would be minimum.We can check the profiles for every activity.
 
 
-<img src="images_readme/jogging_y_acceleration.png"
-<br>
+<img src="images_readme/jogging_y_acceleration.png"><br>
+
 
 
 
