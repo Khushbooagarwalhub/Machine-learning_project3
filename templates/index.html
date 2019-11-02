@@ -48,27 +48,6 @@
           <br><br>
           <input type="submit" value="Submit">
         </form>  -->
-
-
-        <!-- <ul class="nav nav-tabs">
-          <li class="nav-item " id="active">
-            <a class="nav-link" href="http://localhost:5000/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="http://localhost:5000/recipe-page">Find Recipes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="http://localhost:5000/wine-page">Wine Pairings</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="http://localhost:5000/wine-recommendation-page">Wine Recommendations</a>
-          </li> -->
-        <!-- </ul> -->
-        <!-- <form action="action_page.php" method="post"> -->
-            <!-- <div class="imgcontainer">
-              <img src="img_avatar2.png" alt="Avatar" class="avatar">
-            </div>
-           -->
             <div class="row">
             <!-- <div class="col-md-4">
             </div> -->
@@ -102,42 +81,31 @@
         <h1 align="left" >Track your Activity<br><br>
           Get Health Incentives
         </h1>
-        <form>
+        <!-- <form>
           Recorded Activity :<br>
           <input type="text" name="Recorded value" value="Fill between 0 and 1300">
           <br><br>
           <input type="submit" value="Submit" formaction="http://127.0.0.1:5000/predict/100">
-        </form> 
+          <button action="http://127.0.0.1:5000//predict/">submit</button>  -->
+         <!-- </form> --> -->
+
+        
+        <form method="POST" action="http://127.0.0.1:5000/predict_result">
+          <label for="inputrecord">Record</label>
+          <input type="text" id="inputrecord" name="inputrecord" value="Fill between 0 and 1300">
+          <input type="submit" value="submit">
+          
+      </form>
+      <div>
+        {% if predict_string %}
+        <h4>{{predict_string}}</h4>
+        {% endif %}
+      </div>
       </div>
     </div>
   </div>
 
-<!-- <script>
-function myFunction() {
 
-// var text1= $('#text1').val();
-// $.ajax({
-//               url: "/predict_test1",
-//               type: "POST",
-//               data: {text1:text1}
-//           }).done(function(response) {
-//             var html= "<br><br><br><p> <b> RESULT : <b><p>";
-//             response =response.result;
-//                  $.each(response,function(key,val){
-//                  console.log(val);
-//                     html+="<p>"+val+"<p>"
-//                 });
-//                 html +="<br>";
-//                 $(".show-data").append(html);
-//             });
-};
-  </script>
-          <p>
-          Taking input from web<br><br>
-              Text_Value1<input type="text" id="text1" name="text1"><br><br>
-              <button id="clicked" onclick="myFunction()">Submit</button>
-          </p>
-      <div class="show-data" > -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script type="text/javascript" src="../static/js/app.js"></script>
