@@ -59,7 +59,7 @@ Using the raw data we can plot the timeseries data showing the x,y,z acceleratio
 
 The above figure shows the acceleration values for jogging.
 
-<img src="images_readme/walking_y_acceleration.png"><br>
+<img src="images_readme/walkingy_acceleration.png"><br>
 
 The above figure shows the accelration values for walking.
 
