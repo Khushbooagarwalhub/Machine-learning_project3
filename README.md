@@ -39,7 +39,15 @@ Contains all x,y,z  acceleration values
 
 
 
-The reformatted dataset is formed by statistical measures taking 10 second window with 46 transformed attributes in it
+The reformatted dataset is formed by statistical measures taking 10 second window with 46 transformed attributes in it as given below-
+
+XAVG, YAVG, ZAVG
+XPEAK, YPEAK, ZPEAK 
+XABSOLDEV, YABSOLDEV, ZABSOLDEV
+XSTANDDEV, YSTANDDEV, ZSTANDDEV
+RESULTANT is the average of the square roots of the sum of the values of each axis squared √(xi^2 + yi^2 + zi^2).
+X0,X1X2…….Z8,Z9
+
 
 
 
