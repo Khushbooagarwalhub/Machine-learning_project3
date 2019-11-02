@@ -69,4 +69,6 @@ the following ten action classes.<br>
 - Riding a bike
 - Riding a horse
 - Walking the dog
+
+
 The resulting model achieved a classification accuracy of 96%. 
