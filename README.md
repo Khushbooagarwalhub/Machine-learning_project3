@@ -68,6 +68,14 @@ Two techniques were used for sensor based HAR
 2.Long short-term Memory(LSTM)
 
 
+1.Deep neural network(DNN) was used on the reformated data
+There are two models using DNN
+Model 1 with 3 layers gives an accuracy of 87.4%
+Model 2 with extra hidden layers gives an accuracy of 82%
+
+
+
+
 
 
 
