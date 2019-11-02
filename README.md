@@ -7,6 +7,9 @@ Folder for sensor based HAR -"sensor based HAR"
 Folder for image classification - "Image Classification"
 
 ## Sensor-Based HAR
+Jupyter notebooks - "DNN_model.ipynb"
+                     "LSTM_model.ipynb"
+                     "exploratory1.ipynb"
 Data source for sensor based HAR - WISDM dataset
 
 http://www.cis.fordham.edu/wisdm/dataset.php
