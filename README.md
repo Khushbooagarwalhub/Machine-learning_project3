@@ -10,6 +10,7 @@ Folder for image classification - "Image Classification"
 Jupyter notebooks - "DNN_model.ipynb"
                      "LSTM_model.ipynb"
                      "exploratory1.ipynb"
+Resources folder - "WISDM_ar_latest"
 Data source for sensor based HAR - WISDM dataset
 
 http://www.cis.fordham.edu/wisdm/dataset.php
