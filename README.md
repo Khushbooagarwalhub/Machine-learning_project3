@@ -2,6 +2,10 @@
 # Human Action Recognition (HAR)
 Topic -
 Machine Learning techniques in sensor based human activity recognition and understanding human actions using still images.
+Folder for sensor based HAR -"sensor based HAR"
+
+Folder for image classification - "Image Classification"
+
 ## Sensor-Based HAR
 Data source for sensor based HAR - WISDM dataset
 
