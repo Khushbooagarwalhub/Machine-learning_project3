@@ -23,7 +23,7 @@ Standing: 48,395 (4.4%)
 Contains all x,y,z  acceleration values 
 
 
-<img src="sensor based HAR\images\pie_chart"><br>
+<img src="images_readme\pie_chart"><br>
 
 
 
