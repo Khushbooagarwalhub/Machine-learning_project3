@@ -4,7 +4,9 @@ Topic -
 Machine Learning techniques in sensor based human activity recognition and understanding human actions using still images.
 ## Sensor-Based HAR
 Data source for sensor based HAR - WISDM dataset
+
 http://www.cis.fordham.edu/wisdm/dataset.php
+
 The source consist of raw time series data and transformed dataset.
 The raw timeseries data consist of -
 Raw time series data 
