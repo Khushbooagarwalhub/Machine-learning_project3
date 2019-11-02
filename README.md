@@ -22,6 +22,9 @@ Sitting: 59,939 (5.5%)
 Standing: 48,395 (4.4%)
 Contains all x,y,z  acceleration values 
 
+
+
+
 The reformatted dataset is formed by statistical measures taking 10 second window with 46 transformed attributes in it
 
 
