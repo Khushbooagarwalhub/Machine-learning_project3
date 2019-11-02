@@ -57,6 +57,17 @@ Using the raw data we can plot the timeseries data showing the x,y,z acceleratio
 
 <img src="images_readme/jogging_y_acceleration.png"><br>
 
+The above figure shows the acceleration values for jogging.
+
+<img src="images_readme/walking_y_acceleration.png"><br>
+
+The above figure shows the accelration values for walking.
+
+Two techniques were used for sensor based HAR
+1.Deep Neural Network(DNN)
+2.Long short-term Memory(LSTM)
+
+
 
 
 
