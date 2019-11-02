@@ -23,6 +23,8 @@ Standing: 48,395 (4.4%)
 Contains all x,y,z  acceleration values 
 
 
+<img src="sensor based HAR\images\pie_chart"><br>
+
 
 
 The reformatted dataset is formed by statistical measures taking 10 second window with 46 transformed attributes in it
