@@ -1,0 +1,5 @@
+,Name,Training Score,Tuned Training Score,Testing Score,Tuned Testing Score,Training T(S),Tuned Training T(s),Grid T(min)
+0,K-Neighbors Classifier,0.758,1.0,0.753,0.742,0.732,1.899,40.384
+1,Random Forest Classifier,1.0,1.0,0.812,0.7959999999999999,3.28,9.857,28.516
+2,Logistic Regression,1.0,1.0,0.823,0.8059999999999999,4.797,38.444,23.557
+3,Support Vector Machine,0.986,1.0,0.806,0.823,8.815,7.218,23.026

@@ -1,0 +1,4 @@
+,Name,Training Score,Testing Score,Training Time
+0,Logistic Regression,1,0.956,78.825
+1,Random Forest Classification,1,0.904,26.75
+2,Support Vector Machine,0.992,0.935,228.01

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Nova Square' rel='stylesheet'>
+
+
+</head>
+
+<style>
+    body {
+        font-family: 'Nova Square';
+        font-size: 22px;
+    }
+
+    .container {
+        margin-top: 5%;
+    }
+
+    .panel-body .form-group .list-group li {
+        background: #96d1c7;
+    }
+
+    #submission-btn {
+        background: #00818a;
+        color: white;
+    }
+
+    #img {
+        margin: 5%;
+    }
+    #prediction {
+        margin: 3%;
+    }
+
+    #img_prediction {
+        margin-bottom: 5%;
+    }
+
+    #classify {
+        text-align: right;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h1>Image-based Action Recognition</h1>
+            </div>
+            <div class="panel-body">
+                <form action="http://localhost:5000/upload_image" method="POST">
+                    <div class="form-group">
+                        <ul class="list-group" id="constraints">
+                            <li class="constraint list-group-item">
+                                <label for="url">Upload an image</label>
+                                <input class="form-control" id="url" type="url" placeholder="paste an image url here..."
+                                    name="url">
+                            </li>
+                        </ul>
+                    </div>
+                    <button id="submission-btn" type="submit" name="btn-identifier" value="submission-btn"
+                        class="btn btn-default selection-btn">Submit</button>
+                    {% if requested_img.url %}
+                    <a href="http://localhost:5000/predict" id="classify"><p>Classify Image</p></a>
+                    {% endif %}
+                </form>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row" id="img_prediction">
+        <div class="col-md-7" id="img">
+            {% if requested_img.url %}
+            <img class="img-responseive" width=100% src="{{ requested_img.url }}">
+            {% endif %}
+        </div>
+        <div class="col-md-3" id="prediction">
+            {% if requested_img.prediction %}
+            <h2>Prediction: </h2>
+            <hr>
+            <h4>{{ requested_img.prediction }}</h4>
+            {% endif %}
+        </div>
+    </div>
+</body>
+
+</html>
