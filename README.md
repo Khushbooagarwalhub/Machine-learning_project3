@@ -83,6 +83,7 @@ Model 1 using 200 steps with Sliding window of 50 ((16692,200,3)) gives an accur
 Model 2 using 200 steps with Non sliding window((4173,200,3)) gives an accuracy of 87.7%
 
 <img src="images_readme/lstm_test.png"><br>
+The above image shows the confusuin matrix for the best model (LSTM with no sliding window- 87.7% accuracy)
 
 
 
