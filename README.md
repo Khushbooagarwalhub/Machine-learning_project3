@@ -79,6 +79,8 @@ There are two models using DNN
 Model 1 with 3 layers gives an accuracy of 87.4%
 Model 2 with extra hidden layers gives an accuracy of 82%
 <br>
+<br>
+
 2.LSTM model was used on raw time series data 
 There are two models using the LSTM technique
 <br>
