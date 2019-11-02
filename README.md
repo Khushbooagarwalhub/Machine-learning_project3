@@ -1,7 +1,12 @@
 # project_3
 # Human Action Recognition (HAR)
-
+Topic -
+Machine Learning techniques in sensor based human activity recognition and understanding human actions using still images.
 ## Sensor-Based HAR
+Data source for sensor based HAR - WISDM dataset
+http://www.cis.fordham.edu/wisdm/dataset.php
+
+
 
 ## Image-Based HAR
 Transfer learning techniques were used to build an image classification model that recognizes various classes of human activity. 
