@@ -84,14 +84,12 @@ Model 2 using 200 steps with Non sliding window((4173,200,3)) gives an accuracy 
 
 
 
+## Web App for sensor based HAR
 
 
+<img src="images_readme/webpage.png"><br>
 
-
-
-
-
-
+We designed a web app based on sensor based HAR.It gives the predicted class and original label on clicking the submit button
 
 
 
