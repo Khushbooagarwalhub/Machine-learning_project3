@@ -2,8 +2,7 @@
 # Human Action Recognition (HAR)
 
 ## Sensor-Based HAR
-## Image-Base HAR
-![image](https://raw.githubusercontent.com/Khushbooagarwalhub/project_3/master/Image%20Classification/Output/plots/image.png)
+
 ## Image-Based HAR
 Transfer learning techniques were used to build an image classification model that recognizes various classes of human activity. 
 The model was trained on images from the Stanford 40 dataset. You can find out more information about the data 
