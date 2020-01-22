@@ -14,7 +14,10 @@ Resources folder - "WISDM_ar_latest"
 Data source for sensor based HAR - WISDM dataset
 
 http://www.cis.fordham.edu/wisdm/dataset.php
-Citation - "Activity Recognition using cell phone Accelerometers - Jennifer R Kwapisz,Gary M.Weiss,Samuel A.Moore
+
+
+
+     Citation - "Activity Recognition using cell phone Accelerometers - Jennifer R Kwapisz,Gary M.Weiss,Samuel A.Moore
 
 The source consist of raw time series data and transformed dataset.
 
